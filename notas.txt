@@ -1,0 +1,43 @@
+carpeta react-native-mysql-tasks/backend
+
+npm i express mysql2 morgan cors swagger-jsdoc swagger-ui-express dotenv
+
+carpeta src
+
+npm i nodemon @babel/core @babel/cli @babel/preset-env @babel/node -D
+
+crear archivo .babelrc //especifica que va hacer babel
+{
+    "presets": [
+        "@babel/preset-env"
+    ]
+}
+
+en src / index.js
+const greet = 'hello world'
+console.log(greet)
+
+en packcage.json
+"scripts": {
+    "build": "babel src -d dist",
+..........
+
+ejecutar nom run build
+
+agregar en packcage.json
+
+"scripts": {
+    "build": "babel src -d dist",
+     "dev": "nodemon src --exec babel-node"
+..........
+
+crear en carpeta src carpeta controllers, routes
+
+en src database.js, config.js, swaggerOptions.js
+
+en routes crear tasks.js
+
+en controllers crear tasks.js
+
+crear app.js en src
+
